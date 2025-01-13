@@ -5,4 +5,11 @@ function fibs(number) {
   }
   console.log(fib.slice(0, number));
 }
-fibs(2);
+fibs(20);
+
+function fibsRec(number) {
+  if (number < 2) return number;
+  return fibsRec(number - 1) + fibsRec(number - 2);
+}
+
+console.log(fibsRec(10));
